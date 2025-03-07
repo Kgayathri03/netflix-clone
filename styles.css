@@ -1,0 +1,299 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e50914;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #e50914;
+  }
+  
+  /* Hero section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Movie section */
+  .movie-section {
+    padding: 2rem;
+  }
+  
+  .movie-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .movie-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .movie-row img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .movie-row img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #111;
+    font-size: 0.9rem;
+  }
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Dark overlay */
+      url('netflix\ image.jpg') no-repeat center center/cover; /* Background image */
+  }
+  .email-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .email-form input {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  .email-form input::placeholder {
+    color: #999;
+  }
+  
+  .email-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914; /* Netflix Red */
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.3s;
+  }
+  
+  .email-form button:hover {
+    background-color: #f40612; /* Lighter Red on Hover */
+  }
+  .categories {
+    padding: 20px;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.category select{
+    width: 7%;
+    height: 6vh;
+    padding: 10px;
+    margin: 15px;
+}
+.movies {
+    display: flex;
+    gap: 50px;
+}
+/* More Reasons to Join Section */
+.reasons-to-join {
+  padding: 2rem 1rem;
+  background-color: #141414;
+  color: white;
+}
+
+.reasons-to-join h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.reasons-container {
+  display: flex; /* Makes items align horizontally */
+  justify-content: space-around; /* Space evenly between items */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 1.5rem; /* Adds space between cards */
+}
+
+.reason-card {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 20%; /* Adjust width to fit multiple cards in a row */
+  min-width: 200px; /* Ensures cards do not shrink too small */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+}
+
+.reason-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.reason-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reasons-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+  .reason-card {
+    width: 80%; /* Wider cards for smaller screens */
+  }
+}
+.faq-section {
+  padding: 2rem 1rem;
+  background-color: #141414;
+  color: white;
+}
+
+.faq-section h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+}
+
+.accordion {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #333;
+}
+
+.accordion-content {
+  background-color: #141414;
+  color: #ccc;
+  padding: 1rem;
+  display: none; /* Hidden by default */
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+/* Active accordion state */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
